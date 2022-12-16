@@ -1,0 +1,14 @@
+.mainLayout {
+    display: flex;
+    .tags {
+        padding: 30px;
+        span {
+            color: #e7d927;
+            font-size: 17px;
+            font-family: "La Belle Aurore";
+            &:last-of-type {
+                margin-left: 10px;
+            }
+        }
+    }
+}
