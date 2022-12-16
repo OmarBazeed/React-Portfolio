@@ -15,6 +15,7 @@ return (
             <br />
 
             <Outlet />
+            
             <br />
 
             <span>&lt;/body&gt;</span>

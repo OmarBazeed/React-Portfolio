@@ -4,7 +4,9 @@ const Home = ()=>{
 
     return(
         <React.Fragment>
-        Home
+        
+        <div style={{height:'600px'}}>
+        </div>
         </React.Fragment>
     )
 }
