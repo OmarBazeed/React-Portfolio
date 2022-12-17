@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faHomeAlt, faUserAlt } from '@fortawesome/free-solid-svg-icons';
 import { faGithubAlt, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
+
 const Sidebar = () => {
   return (
     <React.Fragment>
