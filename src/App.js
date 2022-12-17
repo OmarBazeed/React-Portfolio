@@ -4,7 +4,7 @@ import './App.scss';
 import About from './components/About';
 import Home from './components/Home';
 import Layout from './components/Layout';
-import Skills from './components/Skills';
+import Contact from './components/Skills';
 
 
 function App() {
@@ -17,9 +17,9 @@ function App() {
         <Route path='/' element={<Layout />} >
           <Route path='home' element={<Home />} />
           <Route path='about' element={<About />} />
-          <Route path='skills' element={<Skills />} />
+          <Route path='contact' element={<Contact />} />
         </Route>
-        
+
       </Routes>
 
     </React.Fragment>

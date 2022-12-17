@@ -1,0 +1,84 @@
+.mainHome {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 8px;
+    .content {
+        h1 {
+            color: white;
+            position: relative;
+            font-size: 30px;
+            width: fit-content;
+            animation: fadeIn 1s 1.8s backwards;
+            @media screen and (max-width: 426px) {
+                font-size: 21px;
+            }
+            span {
+                word-spacing: 5px;
+                letter-spacing: 3px;
+                text-shadow: 8px 13px 13px #000000;
+                font-family: sans-serif;
+                color: white;
+                font-size: 30px;
+                @media screen and (max-width: 426px) {
+                    font-size: 21px;
+                }
+            }
+            &::after {
+                position: absolute;
+                top: -20px;
+                left: -12px;
+                content: attr(data-after);
+                color: #e7d927;
+                font-size: 15px;
+                font-family: "La Belle Aurore";
+            }
+            &::before {
+                position: absolute;
+                bottom: -2px;
+                right: -25px;
+                content: attr(data-before);
+                color: #e7d927;
+                font-size: 15px;
+                font-family: "La Belle Aurore";
+            }
+            img {
+                width: 50px;
+                height: 50px;
+                transform: translateY(16px);
+                box-shadow: 1px 8px 20px black;
+                border-radius: 50%;
+                animation: rotateIn 1.5s linear both;
+                animation-delay: 2s;
+            }
+        }
+        p {
+            margin-top: 20px;
+            letter-spacing: 3px;
+            color: #78909c;
+            font-size: 15px;
+            animation: zoomIn 1s 1.8s linear both;
+        }
+        a {
+            button {
+                border: 1px solid #e7d927;
+                padding: 15px 10px;
+                background-color: transparent;
+                color: #e7d927;
+                font-size: 15px;
+                letter-spacing: 7px;
+                cursor: pointer;
+                margin-top: 40px;
+                filter: drop-shadow(2px 3px 5px gray);
+                border-radius: 10px;
+                transition: .5s;
+                animation: fadeIn 1s 1.8s backwards;
+                &:hover {
+                    background-color: #e7d927;
+                    color: black
+                }
+            }
+        }
+    }
+}

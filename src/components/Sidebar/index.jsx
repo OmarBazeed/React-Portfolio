@@ -22,7 +22,7 @@ const Sidebar = () => {
           <FontAwesomeIcon icon={faHomeAlt} /></NavLink>
           <NavLink to='about' data-content='About'>
           <FontAwesomeIcon icon={faUserAlt} /></NavLink>
-          <NavLink to='skills' data-content='Sills'>
+          <NavLink to='contact' data-content='Contact'>
           <FontAwesomeIcon icon={faEnvelope} /></NavLink>
         </ul>
 

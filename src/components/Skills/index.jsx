@@ -1,11 +1,11 @@
 import React from 'react';
-const Skills = ()=>{
+const Contact = ()=>{
 
     return(
         <React.Fragment>
-            Skills
+            Contact
         </React.Fragment>
     )
 }
 
-export default  Skills;
+export default  Contact;
