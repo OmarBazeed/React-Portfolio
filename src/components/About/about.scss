@@ -1,0 +1,54 @@
+.AboutPage {
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 8px;
+    flex-wrap: wrap;
+    .about-content {
+        width: 60%;
+        h1 {
+            color: #e7d927;
+            position: relative;
+            font-size: 30px;
+            width: fit-content;
+            animation: fadeIn 1s 1.8s backwards;
+            &::after {
+                position: absolute;
+                top: -20px;
+                left: -12px;
+                content: attr(data-after);
+                color: #e7d927;
+                font-size: 15px;
+                font-family: "La Belle Aurore";
+            }
+            &::before {
+                position: absolute;
+                bottom: -2px;
+                right: -50px;
+                content: attr(data-before);
+                color: #e7d927;
+                font-size: 15px;
+                font-family: "La Belle Aurore";
+            }
+        }
+        p {
+            margin-top: 20px;
+            letter-spacing: 3px;
+            color: #78909c;
+            animation: pulse 1s linear;
+        }
+        @media screen and (max-width: 991px) {
+            width: 100%
+        }
+    }
+    .about-skills {
+        width: 40%;
+        p {
+            margin-top: 20px;
+            letter-spacing: 3px;
+            color: #78909c;
+            animation: pulse 1s linear;
+        }
+    }
+}

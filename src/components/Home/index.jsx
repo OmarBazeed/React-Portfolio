@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Developer from '../../assets/images/WORK.png';
 import './home.scss';
 import AnimatedLetters from '../AnimattedLetters';
+import Logo from './Logo';
 
 const Home = ()=>{
 
@@ -37,6 +38,10 @@ const Home = ()=>{
                     <Link to='/contact'>
                         <button> Contact Me</button>
                     </Link> 
+                </div>
+
+                <div className='logo-div'>
+                    <Logo />
                 </div>
 
             </div>
