@@ -1,18 +1,34 @@
 .AboutPage {
-    min-height: 700px;
+    min-height: 800px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-left: 8px;
+    justify-content: space-around;
     flex-wrap: wrap;
+    padding-left: 30px;
+    @media screen and (max-width: 425px) {
+        margin-top: -73px;
+        padding-left: 20px;
+    }
     .about-content {
-        width: 60%;
+        width: 40%;
+        animation: fadeIn 1s 1s linear both;
+        @media screen and (max-width: 991px) {
+            width: 100%
+        }
         h1 {
-            color: #e7d927;
             position: relative;
-            font-size: 30px;
             width: fit-content;
-            animation: fadeIn 1s 1.8s backwards;
+            span {
+                color: #e7d927;
+                font-size: 50px;
+                font-family: "Coolvetica"!important;
+                letter-spacing: 5px;
+                .text-animate-hover {
+                    &:hover {
+                        color: white !important;
+                    }
+                }
+            }
             &::after {
                 position: absolute;
                 top: -20px;
@@ -33,22 +49,95 @@
             }
         }
         p {
-            margin-top: 20px;
-            letter-spacing: 3px;
+            margin-top: 17px;
             color: #78909c;
             animation: pulse 1s linear;
-        }
-        @media screen and (max-width: 991px) {
-            width: 100%
+            font-size: 17px;
+            @media (max-width: 425px) {
+                font-size: 15px;
+            }
+            &:first-of-type {
+                animation-delay: 1.8s;
+            }
+            &:nth-of-type(2) {
+                animation-delay: 2s;
+            }
+            &:last-of-type {
+                animation-delay: 2.2s;
+            }
         }
     }
     .about-skills {
         width: 40%;
-        p {
-            margin-top: 20px;
-            letter-spacing: 3px;
-            color: #78909c;
-            animation: pulse 1s linear;
+        margin-top: -100px;
+        animation: fadeIn 1s 1s linear both;
+        .cube-spinner {
+            animation: cubespin 12s infinite ease-in-out;
+            transform-style: preserve-3d;
+            transform-origin: 100px 100px 0;
+            margin-left: 50px;
+            @keyframes cubespin {
+                from,
+                to {
+                    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+                }
+                16% {
+                    transform: rotateY(-90deg) rotateZ(90deg);
+                }
+                33% {
+                    transform: rotateY(-90deg) rotateX(90deg);
+                }
+                50% {
+                    transform: rotateY(-180deg) rotateZ(90deg);
+                }
+                66% {
+                    transform: rotateY(-270deg) rotateX(90deg);
+                }
+                83% {
+                    transform: rotateX(90deg);
+                }
+            }
+            div {
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                border: 1px solid #ccc;
+                background: rgba(255, 255, 255, 0.4);
+                text-align: center;
+                font-size: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0 0 10px 0px lightyellow;
+            }
+            .face1 {
+                transform: translateZ(100px);
+                color: #dd0031;
+            }
+            .face2 {
+                transform: rotateY(90deg) translateZ(100px);
+                color: #f06529;
+            }
+            .face3 {
+                transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+                color: #28a4d9;
+            }
+            .face4 {
+                transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+                color: #5ed4f4;
+            }
+            .face5 {
+                transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+                color: #efd81d;
+            }
+            .face6 {
+                transform: rotateX(-90deg) translateZ(100px);
+                color: #ec4d28;
+            }
+            @media screen and (max-width: 991px) {
+                margin-left: -45px;
+                margin-top: -115px;
+            }
         }
     }
 }

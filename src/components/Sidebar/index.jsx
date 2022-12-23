@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import './sidebar.scss';
 import Logo1 from '../../assets/images/WORK.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faHomeAlt, faUserAlt } from '@fortawesome/free-solid-svg-icons';
+import { faBrain, faEnvelope, faHomeAlt, faUserAlt } from '@fortawesome/free-solid-svg-icons';
 import { faGithubAlt, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 
@@ -13,18 +13,16 @@ const Sidebar = () => {
 
       <section  className='sidebar'>
 
-        <NavLink to='/' className='sidebar-logo'>
+        <NavLink to='home' className='sidebar-logo'>
         <img src={Logo1} alt='logo1' className='logo1' />
         <h3> Omar Bazeed</h3>
         </NavLink>
         
         <ul className='sidebar-navi'>
-          <NavLink to='home' data-content='Home'>
-          <FontAwesomeIcon icon={faHomeAlt} /></NavLink>
-          <NavLink to='about' data-content='About'>
-          <FontAwesomeIcon icon={faUserAlt} /></NavLink>
-          <NavLink to='contact' data-content='Contact'>
-          <FontAwesomeIcon icon={faEnvelope} /></NavLink>
+          <NavLink to='/home' data-content='Home'> <FontAwesomeIcon icon={faHomeAlt} /> </NavLink>
+          <NavLink to='/about' data-content='About'> <FontAwesomeIcon icon={faUserAlt} /> </NavLink>
+          <NavLink to='/skills' data-content='Skills'> <FontAwesomeIcon icon={faBrain} /> </NavLink>
+          <NavLink to='/contact' data-content='Contact'> <FontAwesomeIcon icon={faEnvelope} /> </NavLink>
         </ul>
 
         <ul className='connect'>

@@ -1,11 +1,16 @@
-import React from 'react';
-const Contact = ()=>{
+import React from "react";
+import './skills.scss';
+import Words from "./Spherical-Word-Canvas";
 
+const Skills =()=>{
     return(
         <React.Fragment>
-            Contact
+        hello skils
+        <div className="">
+        <Words  />
+        </div>
         </React.Fragment>
     )
 }
 
-export default  Contact;
+export default Skills;

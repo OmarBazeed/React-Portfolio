@@ -4,6 +4,7 @@ import Developer from '../../assets/images/WORK.png';
 import './home.scss';
 import AnimatedLetters from '../AnimattedLetters';
 import Logo from './Logo';
+import Loader from 'react-loaders';
 
 const Home = ()=>{
 
@@ -19,6 +20,7 @@ const Home = ()=>{
     
     return(
         <React.Fragment>
+        
             <div className='mainHome'>
 
                 <div className='content'>
@@ -45,6 +47,9 @@ const Home = ()=>{
                 </div>
 
             </div>
+
+            <Loader type='ball-spin-fade-loader' />
+
         </React.Fragment>
     )
 }
