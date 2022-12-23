@@ -14,7 +14,7 @@ return (
             <span> &lt;body&gt; </span>
             <br />
 
-            <Outlet />
+            <Outlet /> 
             
             <br />
 
