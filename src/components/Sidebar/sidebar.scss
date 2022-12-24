@@ -40,12 +40,13 @@
             &::after {
                 position: absolute;
                 top: 0;
-                left: -13px;
+                left: -8px;
                 content: attr(data-content);
                 color: #e7d927;
                 text-align: center;
                 opacity: 0;
                 transition: .5s;
+                font-size: 15px;
             }
             &:hover {
                 svg {
@@ -58,6 +59,11 @@
             &.active {
                 svg {
                     color: #e7d927
+                }
+            }
+            &:last-of-type {
+                &::after {
+                    left: -14px;
                 }
             }
         }
