@@ -43,6 +43,7 @@ const Contact = ()=>{
 
     <div className='ContactPage'>
         <div className='Contact-content'>
+
             <div className='first'>
                 <h1 data-after="&lt;h1&gt;" data-before='&lt;/h1&gt;'>
                     <AnimatedLetters letterClass={letterClass} strArray={titleArray} idx={15}  />
@@ -59,34 +60,35 @@ const Contact = ()=>{
                     <input type='submit'  value='send'/>
                 </form>
             </div>
+            
         </div>
         
         <div className='map-div'>
 
             <div className='info'>
-            Omar Bazeed ,  Manoura  <br />
-            Mansourah , Dakhliaha , Egypt <br />
-            <span> omarbazeed@gmail.com</span>
+                Omar Bazeed ,  Manoura  <br />
+                Mansourah , Dakhliaha , Egypt <br />
+                <span> omarbazeed@gmail.com</span>
             </div>
 
             <div className='the-map'>
                 <MapContainer center={position} zoom={13} scrollWheelZoom={true}>
-                <TileLayer
-                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                />
-                <Marker position={position}>
-                    <Popup>
-                    unfortunately, need to pay to get my right location So I live In Mansoura Search For It , And Come To Have Some Coffee !!
-                    </Popup>
-                </Marker>
+                    <TileLayer
+                    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                    />
+                        <Marker position={position}>
+                            <Popup>
+                            unfortunately, need to pay to get my right location So I live In Mansoura Search For It , And Come To Have Some Coffee !!
+                            </Popup>
+                        </Marker>
                 </MapContainer>
             </div>
         
         </div>
     </div>
 
-        <Loader type='pacman' />
+        <Loader type='ball-clip-rotate-multiple' />
             
 </React.Fragment>
     )

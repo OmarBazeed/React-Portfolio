@@ -58,7 +58,7 @@ const About = ()=>{
 
         </div>
 
-        <Loader type='pacman' />
+        <Loader type='line-scale-pulse-out-rapid' />
         
     </React.Fragment>
     )
