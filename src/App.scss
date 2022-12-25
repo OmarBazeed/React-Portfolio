@@ -37,3 +37,45 @@ textarea {
     width: 50px;
     animation: fadeOut 1s 1s forwards linear;
 }
+
+
+/* Media Query For Mobile For All APP's Pages */
+
+@media screen and (max-width:768px) {
+    .mainLayout {
+        display: block !important;
+    }
+    .sidebar {
+        width: 98% !important;
+        margin: 0;
+        align-items: center;
+        height: 60px !important;
+        flex-direction: row !important;
+        display: flex !important;
+    }
+    .sidebar .sidebar-logo img {
+        height: 60px !important;
+        width: 60px !important;
+        margin-top: 30px
+    }
+    .sidebar .sidebar-navi {
+        flex-direction: row !important;
+        margin-top: 20px;
+    }
+    .sidebar .sidebar-navi a {
+        margin: 10px !important;
+    }
+    .sidebar .connect {
+        margin-top: 25px;
+    }
+    .mainLayout .tags {
+        width: 95% !important;
+        height: 100vh !important;
+        overflow-y: scroll !important;
+        overflow-x: hidden !important;
+        padding: 10px !important;
+    }
+    .PortfolioPage #app .swiper {
+        height: 475px !important;
+    }
+}

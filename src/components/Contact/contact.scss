@@ -117,8 +117,8 @@
         }
     }
     .map-div {
-        width: 40%;
-        height: 600px;
+        width: 50%;
+        height: 100vh;
         background-color: rgba(8, 253, 216, .1);
         padding: 10px;
         animation: zoomIn 1s 1.8s linear both;
@@ -131,9 +131,18 @@
             font-size: 18px;
             color: white;
             word-spacing: 5px;
+            margin-bottom: 5px;
+            padding: 5px;
+            @media screen and (max-width: 991px) {
+                background-color: black;
+            }
             span {
-                font-size: 18px;
-                font-family: 'Courier New', Courier, monospace !important;
+                a {
+                    font-size: 18px;
+                    font-family: 'Courier New', Courier, monospace !important;
+                    text-decoration: none;
+                    color: #e7d927 !important;
+                }
             }
         }
         .the-map {

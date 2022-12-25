@@ -1,5 +1,8 @@
 .mainLayout {
     display: flex;
+    // @media screen and (max-width: 786px) {
+    //     display: block ;
+    // }
     .tags {
         padding: 30px 22px;
         width: 100%;

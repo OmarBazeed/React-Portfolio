@@ -66,9 +66,9 @@ const Contact = ()=>{
         <div className='map-div'>
 
             <div className='info'>
-                Omar Bazeed ,  Manoura  <br />
+                Omar Bazeed , +0201095851070  <br />
                 Mansourah , Dakhliaha , Egypt <br />
-                <span> omarbazeed@gmail.com</span>
+                <span><a href='https://mail.google.com/mail/u/0/?hl=ar#inbox' target='_blank' rel='noreferrer'>omarbazeed@gmail.com</a> </span>
             </div>
 
             <div className='the-map'>

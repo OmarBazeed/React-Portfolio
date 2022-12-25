@@ -67,7 +67,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        animation: slideInRight 1s 1.9s linear both;
+        animation: rotateInUpRight 1s 1.9s linear both;
         @media screen and (max-width: 991px) {
             width: 90%
         }
@@ -146,6 +146,9 @@
                 p {
                     color: black;
                     text-shadow: 1px 1px 2px white;
+                    @media (max-width: 425px) {
+                        font-size: 15px;
+                    }
                 }
                 button {
                     padding: 15px 25px;
