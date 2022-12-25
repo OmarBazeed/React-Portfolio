@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Layout from './components/Layout';
 import Contact from './components/Contact';
 import Skills from './components/Skills';
+import Portfolio from './components/Portfolio';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path='about' element={<About />} />
           <Route path='skills' element={<Skills />} />
+          <Route path='portfolio' element={<Portfolio />} />
           <Route path='contact' element={<Contact />} />
         </Route>
 

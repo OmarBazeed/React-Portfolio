@@ -59,26 +59,51 @@
             letter-spacing: 3px;
             color: #78909c;
             font-size: 15px;
-            animation: zoomIn 1s 1.8s linear both;
+            animation: jackInTheBox 1s 2s 1 linear both;
         }
         a {
+            @media screen and (max-width: 425px) {
+                display: block;
+            }
             button {
                 border: 1px solid #e7d927;
                 padding: 15px 10px;
                 background-color: transparent;
                 color: #e7d927;
                 font-size: 15px;
-                letter-spacing: 7px;
+                letter-spacing: 5px;
                 cursor: pointer;
                 margin-top: 40px;
                 filter: drop-shadow(2px 3px 5px gray);
                 border-radius: 10px;
                 transition: .5s;
                 animation: fadeIn 1s 1.8s backwards;
+                margin-right: 15px;
                 &:hover {
                     background-color: #e7d927;
                     color: black
                 }
+            }
+        }
+        .download {
+            border: 1px solid #e7d927;
+            padding: 15px 10px;
+            background-color: transparent;
+            color: #e7d927 !important;
+            font-size: 15px;
+            letter-spacing: 5px;
+            cursor: pointer;
+            margin-top: 40px;
+            filter: drop-shadow(2px 3px 5px gray);
+            border-radius: 10px;
+            transition: .5s;
+            animation: fadeIn 1s 1.8s backwards;
+            margin-right: 15px;
+            text-decoration: none !important;
+            width: fit-content;
+            &:hover {
+                background-color: #e7d927;
+                color: black !important;
             }
         }
     }

@@ -5,6 +5,7 @@ import './home.scss';
 import AnimatedLetters from '../AnimattedLetters';
 import Logo from './Logo';
 import Loader from 'react-loaders';
+import DownloadLink from "react-download-link";
 
 const Home = ()=>{
 
@@ -18,6 +19,8 @@ const Home = ()=>{
         }, 4000) 
     },[])
     
+
+
     return(
         <React.Fragment>
         
@@ -39,7 +42,15 @@ const Home = ()=>{
 
                     <Link to='/contact'>
                         <button> Contact Me</button>
-                    </Link> 
+                    </Link>
+                    
+                    <DownloadLink
+                        label="Downlaod CV"
+                        filename="./Omar Bazeed.pdf"
+                        className='download'
+                    />
+
+
                 </div>
 
                 <div className='logo-div'>
