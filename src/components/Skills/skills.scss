@@ -5,6 +5,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     padding-left: 30px;
+    overflow: hidden;
     .Skills-content {
         width: 40%;
         animation: fadeIn 1s 1s linear both;
@@ -48,6 +49,7 @@
             margin-top: 17px;
             color: #78909c;
             animation: pulse 1s linear;
+            animation: flip 1s 1.8s linear forwards;
             font-size: 17px;
             @media (max-width: 425px) {
                 font-size: 15px;
