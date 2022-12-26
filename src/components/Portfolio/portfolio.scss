@@ -93,6 +93,7 @@
             color: #fff;
             background-size: cover;
             background-repeat: no-repeat;
+            background-position: center !important;
             position: relative;
             animation: 1s 1.8s linear both;
             &:hover {
@@ -103,6 +104,7 @@
             }
             &:nth-of-type(1) {
                 background: url('./Portfolio-imgs/dashboard.PNG');
+                background-position: 0% 16%!important;
             }
             &:nth-of-type(2) {
                 background: url('./Portfolio-imgs/Youtube-clone.PNG');

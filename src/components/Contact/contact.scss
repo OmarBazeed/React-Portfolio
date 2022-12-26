@@ -136,6 +136,9 @@
             @media screen and (max-width: 991px) {
                 background-color: black;
             }
+            @media screen and (max-width: 425px) {
+                font-size: 15px !important;
+            }
             span {
                 a {
                     font-size: 18px;

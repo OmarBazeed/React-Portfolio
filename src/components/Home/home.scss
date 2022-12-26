@@ -83,6 +83,9 @@
                     background-color: #e7d927;
                     color: black
                 }
+                @media (max-width:425px) {
+                    margin-top: 20px;
+                }
             }
         }
         .download {
@@ -104,6 +107,9 @@
             &:hover {
                 background-color: #e7d927;
                 color: black !important;
+            }
+            @media (max-width:425px) {
+                padding: 12px 10px;
             }
         }
     }

@@ -46,11 +46,9 @@ const Home = ()=>{
                     
                     <DownloadLink
                         label="Downlaod CV"
-                        filename="./Omar Bazeed.pdf"
+                        filename="./Omar Bazeed_2.pdf"
                         className='download'
-                    />
-
-
+                    /> 
                 </div>
 
                 <div className='logo-div'>
