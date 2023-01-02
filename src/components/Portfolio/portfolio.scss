@@ -75,7 +75,7 @@
             width: 550px;
             height: 600px;
             @media screen and (max-width: 768px) {
-                width: 300px !important;
+                width: 268px !important;
                 height: 400px;
                 margin-top: 50px;
             }
@@ -151,6 +151,7 @@
                     color: #e7d927;
                     @media (max-width: 425px) {
                         font-size: 15px;
+                        padding: 0 4px;
                     }
                 }
                 button {

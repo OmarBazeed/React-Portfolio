@@ -38,7 +38,7 @@ const Home = ()=>{
                         <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={22}  />
                     </h1>
                     
-                    <p> Frontend Developer | Some Skills Of Graphic Desiner </p>
+                    <p> Frontend Developer | Some Skills Of Graphic Designer </p>
 
                     <Link to='/contact'>
                         <button> Contact Me</button>
@@ -46,7 +46,7 @@ const Home = ()=>{
                     
                     <DownloadLink
                         label="Downlaod CV"
-                        filename="./Omar Bazeed_2.pdf"
+                        filename="./Omar Bazeed.pdf"
                         className='download'
                     /> 
                 </div>
