@@ -96,10 +96,12 @@
             background-position: center !important;
             position: relative;
             animation: 1s 1.8s linear both;
+            transition: .5s;
             &:hover {
+                box-shadow: -8px 5px 20px 0px #e7d927;
                 div {
                     opacity: 1;
-                    background-color: #ff98006b;
+                    background-color: #022c43e8;
                 }
             }
             &:nth-of-type(1) {
@@ -146,8 +148,7 @@
                     }
                 }
                 p {
-                    color: black;
-                    text-shadow: 1px 1px 2px white;
+                    color: #e7d927;
                     @media (max-width: 425px) {
                         font-size: 15px;
                     }

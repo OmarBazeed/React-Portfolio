@@ -9,7 +9,6 @@
         h1 {
             color: white;
             position: relative;
-            font-size: 30px;
             width: fit-content;
             animation: fadeIn 1s 1.8s backwards;
             @media screen and (max-width: 426px) {
@@ -21,8 +20,8 @@
                 text-shadow: 8px 13px 13px #000000;
                 font-family: sans-serif;
                 color: white;
-                font-size: 30px;
-                @media screen and (max-width: 426px) {
+                font-size: 50px;
+                @media screen and (max-width: 550px) {
                     font-size: 21px;
                 }
             }
@@ -80,7 +79,8 @@
                 animation: fadeIn 1s 1.8s backwards;
                 margin-right: 15px;
                 &:hover {
-                    background-color: #e7d927;
+                    box-shadow: 0 0 50px #e7d927;
+                    background: #e7d927;
                     color: black
                 }
                 @media (max-width:425px) {
@@ -107,6 +107,7 @@
             &:hover {
                 background-color: #e7d927;
                 color: black !important;
+                box-shadow: 0 0 50px #e7d927;
             }
             @media (max-width:425px) {
                 padding: 12px 10px;

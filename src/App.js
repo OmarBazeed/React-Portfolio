@@ -12,8 +12,7 @@ import Portfolio from './components/Portfolio';
 function App() {
   return (
     <React.Fragment>
-    
-
+  
       <Routes>
 
         <Route path='/' element={<Layout />} >
