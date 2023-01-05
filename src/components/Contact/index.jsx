@@ -79,7 +79,7 @@ const Contact = ()=>{
                     />
                         <Marker position={position}>
                             <Popup>
-                            unfortunately, need to pay to get my right location So I live In Mansoura Search For It , And Come To Have Some Coffee !!
+                            unfortunately, need to pay to get my right location So I live In Mansoura Search For It , Come To Have Some Coffee !!
                             </Popup>
                         </Marker>
                 </MapContainer>

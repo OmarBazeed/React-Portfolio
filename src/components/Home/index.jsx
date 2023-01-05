@@ -5,7 +5,7 @@ import './home.scss';
 import AnimatedLetters from '../AnimattedLetters';
 import Logo from './Logo';
 import Loader from 'react-loaders';
-import DownloadLink from "react-download-link";
+import PDF from './Omar Bazeed.pdf';
 
 const Home = ()=>{
 
@@ -44,11 +44,7 @@ const Home = ()=>{
                         <button> Contact Me</button>
                     </Link>
                     
-                    <DownloadLink
-                        label="Downlaod CV"
-                        filename="./Omar Bazeed.pdf"
-                        className='download'
-                    /> 
+                    <a href={PDF} className='download' download > Download C.V </a> 
                 </div>
 
                 <div className='logo-div'>
