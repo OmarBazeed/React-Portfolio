@@ -77,7 +77,9 @@ return (
                 <div><p> Responsive And Interactive Templete With Javascript  <br /> Go A Head And Take A Look !</p><button><a href='https://omarbazeed.github.io/-Templete-Using-Html-Css-Javascript/' target='_blank' rel='noreferrer'>Demo <FontAwesomeIcon icon={faArrowRight} /> </a> </button></div>
                 </SwiperSlide>
 
-                
+                <SwiperSlide>
+                <div><p> Tetris Game With React <br /> Go And Start A New Game !</p><button><a href='https://ob-react-tetris-game.onrender.com' target='_blank' rel='noreferrer'>Demo <FontAwesomeIcon icon={faArrowRight} /> </a> </button></div>
+                </SwiperSlide>
             </Swiper>
         </div>
 
