@@ -100,106 +100,106 @@
             transition: .5s;
             &:hover {
                 box-shadow: -8px 5px 20px 0px #e7d927;
-                div {
-                    opacity: 1;
-                    background-color: #022c43e8;
-                }
-            }
-            &:nth-of-type(1) {
-                background: url('./Portfolio-imgs/dashboard.PNG');
-                background-position: 0% 16%!important;
-            }
-            &:nth-of-type(2) {
-                background: url('./Portfolio-imgs/Youtube-clone.PNG');
-            }
-            &:nth-of-type(3) {
-                background: url('./Portfolio-imgs/E-commrce.PNG');
-            }
-            &:nth-of-type(4) {
-                background: url('./Portfolio-imgs/WatchList.PNG');
-            }
-            &:nth-of-type(5) {
-                background: url('./Portfolio-imgs/reminder.PNG');
-            }
-            &:nth-of-type(6) {
-                background: url('./Portfolio-imgs/crud.PNG');
-            }
-            &:nth-of-type(7) {
-                background: url('./Portfolio-imgs/type-speed.PNG');
-            }
-            &:nth-of-type(8) {
-                background: url('./Portfolio-imgs/app.PNG');
-            }
-            &:nth-of-type(9) {
-                background: url('./Portfolio-imgs/tetris.PNG');
             }
             div {
-                opacity: 0;
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                transition: .5s;
-                padding: 15px;
-                &:hover {
-                    button {
-                        animation: zoomInLeft 1s linear both;
-                        opacity: 1;
-                    }
-                    p {
-                        animation: zoomInRight 1s linear both;
-                    }
+                opacity: 1;
+                background-color: #022c43e8;
+            }
+        }
+        &:nth-of-type(1) {
+            background: url('./Portfolio-imgs/dashboard.PNG');
+            background-position: 0% 16%!important;
+        }
+        &:nth-of-type(2) {
+            background: url('./Portfolio-imgs/Youtube-clone.PNG');
+        }
+        &:nth-of-type(3) {
+            background: url('./Portfolio-imgs/E-commrce.PNG');
+        }
+        &:nth-of-type(4) {
+            background: url('./Portfolio-imgs/WatchList.PNG');
+        }
+        &:nth-of-type(5) {
+            background: url('./Portfolio-imgs/reminder.PNG');
+        }
+        &:nth-of-type(6) {
+            background: url('./Portfolio-imgs/crud.PNG');
+        }
+        &:nth-of-type(7) {
+            background: url('./Portfolio-imgs/type-speed.PNG');
+        }
+        &:nth-of-type(8) {
+            background: url('./Portfolio-imgs/app.PNG');
+        }
+        &:nth-of-type(9) {
+            background: url('./Portfolio-imgs/tetris.PNG');
+        }
+        div {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: .5s;
+            padding: 15px;
+            &:hover {
+                button {
+                    animation: zoomInLeft 1s linear both;
+                    opacity: 1;
                 }
                 p {
-                    color: #e7d927;
-                    @media (max-width: 500px) {
-                        font-size: 15px;
-                        padding: 0 4px;
-                    }
+                    animation: zoomInRight 1s linear both;
                 }
-                button {
-                    padding: 15px 25px;
-                    background: #022c43;
-                    box-shadow: 2px 3px 4px black;
-                    border: none;
-                    border-radius: 10px;
-                    transition: .5s;
-                    color: white;
-                    letter-spacing: 3px;
+            }
+            p {
+                color: #e7d927;
+                @media (max-width: 500px) {
                     font-size: 15px;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    cursor: pointer;
-                    font-weight: bold;
-                    opacity: 0;
-                    a {
-                        text-decoration: none;
-                        color: inherit;
-                        svg {
-                            animation: moveright .8s infinite linear alternate;
-                            margin-top: 3px;
-                            @keyframes moveright {
-                                from {
-                                    transform: translateX(0);
-                                    color: tomato;
-                                }
-                                to {
-                                    transform: translateX(5px);
-                                    color: white;
-                                }
+                    padding: 0 4px;
+                }
+            }
+            button {
+                padding: 15px 25px;
+                background: #022c43;
+                box-shadow: 2px 3px 4px black;
+                border: none;
+                border-radius: 10px;
+                transition: .5s;
+                color: white;
+                letter-spacing: 3px;
+                font-size: 15px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                cursor: pointer;
+                font-weight: bold;
+                opacity: 0;
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                    svg {
+                        animation: moveright .8s infinite linear alternate;
+                        margin-top: 3px;
+                        @keyframes moveright {
+                            from {
+                                transform: translateX(0);
+                                color: tomato;
+                            }
+                            to {
+                                transform: translateX(5px);
+                                color: white;
                             }
                         }
                     }
-                    &:hover {
-                        box-shadow: 0 0 50px tomato;
-                        color: tomato;
-                    }
-                    &:focus {
-                        outline: none;
-                    }
+                }
+                &:hover {
+                    box-shadow: 0 0 50px tomato;
+                    color: tomato;
+                }
+                &:focus {
+                    outline: none;
                 }
             }
         }

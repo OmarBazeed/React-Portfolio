@@ -14,8 +14,10 @@ const texts = [
   'Redux',
   'REST',
   'Redux',
-  'Redux-toolkit'
-
+  'Redux-toolkit',
+  'Tailwind Css',
+  'Javascript',
+  'Proplem-Solving'
 ];
 const computePosition = (idx, random = false, size) => {
   if (random)
