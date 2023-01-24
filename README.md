@@ -24,7 +24,7 @@
    ``` 
   ---------------------------------------------------------------------------------------------------------------
  ### Live Demo : 
- [Dashboard Using React](https://ob-portfolio-react.onrender.com)
+ [React Portfolio](https://ob-portfolio-react.onrender.com)
  
  ---------------------------------------------------------------------------------------------------------------
  ### Live Pictures :
