@@ -63,25 +63,16 @@
         }
     }
     #app {
-        width: 40%;
+        width: 90vw;
+        height: 65vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        animation: rotateInUpRight 1s 1.9s linear both;
+        animation: fadeInLeftBig 1s 1.9s linear both;
         .swiper {
-            width: 550px;
-            height: 600px;
-            @media screen and (min-width: 991px) {
-                height: 60vh;
-            }
-            @media screen and (max-width: 768px) {
-                width: 268px !important;
-                height: 400px;
-                margin-top: 50px;
-            }
-            @media screen and (max-width: 425px) {
-                margin-left: -42px !important;
-            }
+            height: 100%;
+            width: 80%;
+            box-shadow: 6px 7px 20px 0px #333;
         }
         .swiper-slide {
             display: flex;
@@ -97,9 +88,6 @@
             position: relative;
             animation: 1s 1.8s linear both;
             transition: .5s;
-            &:hover {
-                box-shadow: -8px 5px 20px 0px #e7d927;
-            }
             &:nth-of-type(1) {
                 background: url('./Portfolio-imgs/dashboard.PNG');
                 background-position: 0% 16%!important;
@@ -137,11 +125,15 @@
                 height: 100%;
                 transition: .5s;
                 padding: 15px;
+                text-align: center;
                 &:hover {
                     background-color: #022c43e8;
                     button {
                         animation: zoomInLeft 1s linear both;
                         opacity: 1;
+                        &:last-of-type {
+                            animation: zoomInRight 1s linear both;
+                        }
                     }
                     p {
                         animation: zoomInRight 1s linear both;
@@ -151,9 +143,10 @@
                 p {
                     color: #e7d927;
                     opacity: 0;
+                    padding: 0 5px;
+                    word-wrap: break-word;
                     @media (max-width: 500px) {
                         font-size: 15px;
-                        padding: 0 4px;
                     }
                 }
                 button {
@@ -173,12 +166,19 @@
                     cursor: pointer;
                     font-weight: bold;
                     opacity: 0;
+                    &:last-of-type {
+                        top: 63%;
+                        svg {
+                            margin-right: 3px;
+                        }
+                    }
                     a {
                         text-decoration: none;
                         color: inherit;
                         svg {
                             animation: moveright .8s infinite linear alternate;
                             margin-top: 3px;
+                            font-size: 20px;
                             @keyframes moveright {
                                 from {
                                     transform: translateX(0);
