@@ -1,205 +1,208 @@
 .PortfolioPage {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding-left: 30px;
-    margin-top: 10px;
-    @media screen and (min-width: 769px) {
-        min-height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-left: 30px;
+  margin-top: 10px;
+  @media screen and (min-width: 769px) {
+    min-height: 800px;
+  }
+  .Portfolio-content {
+    width: 40%;
+    animation: fadeIn 1s 1s linear both;
+    @media screen and (max-width: 991px) {
+      width: 100%;
     }
-    .Portfolio-content {
-        width: 40%;
-        animation: fadeIn 1s 1s linear both;
-        @media screen and (max-width: 991px) {
-            width: 100%
+    h1 {
+      position: relative;
+      width: -moz-fit-content;
+      width: fit-content;
+      span {
+        color: #e7d927;
+        font-size: 50px;
+        font-family: 'Coolvetica' !important;
+        letter-spacing: 5px;
+        .text-animate-hover {
+          &:hover {
+            color: white !important;
+            animation: heartBeat 1s linear forwards !important;
+          }
         }
-        h1 {
-            position: relative;
-            width: -moz-fit-content;
-            width: fit-content;
-            span {
-                color: #e7d927;
-                font-size: 50px;
-                font-family: "Coolvetica"!important;
-                letter-spacing: 5px;
-                .text-animate-hover {
-                    &:hover {
-                        color: white !important;
-                        animation: heartBeat 1s linear forwards !important;
-                    }
-                }
-                @media screen and (max-width:425px) {
-                    font-size: 35px;
-                }
+        @media screen and (max-width: 425px) {
+          font-size: 35px;
+        }
+      }
+      &::after {
+        position: absolute;
+        top: -20px;
+        left: -12px;
+        content: attr(data-after);
+        color: #e7d927;
+        font-size: 15px;
+        font-family: 'La Belle Aurore';
+      }
+      &::before {
+        position: absolute;
+        bottom: -2px;
+        right: -50px;
+        content: attr(data-before);
+        color: #e7d927;
+        font-size: 15px;
+        font-family: 'La Belle Aurore';
+      }
+    }
+    p {
+      margin-top: 17px;
+      color: #78909c;
+      animation: tada 1s 1.8s linear both;
+      font-size: 17px;
+      @media (max-width: 425px) {
+        font-size: 13px;
+      }
+    }
+  }
+  #app {
+    width: 90vw;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInLeftBig 1s 1.9s linear both;
+    .swiper {
+      height: 100%;
+      width: 80%;
+      box-shadow: 6px 7px 20px 0px #333;
+    }
+    .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 18px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #fff;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center !important;
+      position: relative;
+      animation: 1s 1.8s linear both;
+      transition: 0.5s;
+      &:nth-of-type(1) {
+        background: url('./Portfolio-imgs/Amazon-clone.png');
+      }
+      &:nth-of-type(2) {
+        background: url('./Portfolio-imgs/dashboard.PNG');
+        background-position: 0% 16% !important;
+      }
+      &:nth-of-type(3) {
+        background: url('./Portfolio-imgs/Youtube-clone.PNG');
+      }
+      &:nth-of-type(4) {
+        background: url('./Portfolio-imgs/E-commrce.PNG');
+      }
+      &:nth-of-type(5) {
+        background: url('./Portfolio-imgs/WatchList.PNG');
+      }
+      &:nth-of-type(6) {
+        background: url('./Portfolio-imgs/reminder.PNG');
+      }
+      &:nth-of-type(7) {
+        background: url('./Portfolio-imgs/crud.PNG');
+      }
+      &:nth-of-type(8) {
+        background: url('./Portfolio-imgs/type-speed.PNG');
+      }
+      &:nth-of-type(9) {
+        background: url('./Portfolio-imgs/app.PNG');
+      }
+      &:nth-of-type(9) {
+        background: url('./Portfolio-imgs/tetris.PNG');
+      }
+      div {
+        opacity: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+        padding: 15px;
+        text-align: center;
+        &:hover {
+          background-color: #022c43e8;
+          button {
+            animation: zoomInLeft 1s linear both;
+            opacity: 1;
+            &:last-of-type {
+              animation: zoomInRight 1s linear both;
             }
-            &::after {
-                position: absolute;
-                top: -20px;
-                left: -12px;
-                content: attr(data-after);
-                color: #e7d927;
-                font-size: 15px;
-                font-family: "La Belle Aurore";
-            }
-            &::before {
-                position: absolute;
-                bottom: -2px;
-                right: -50px;
-                content: attr(data-before);
-                color: #e7d927;
-                font-size: 15px;
-                font-family: "La Belle Aurore";
-            }
+          }
+          p {
+            animation: zoomInRight 1s linear both;
+            opacity: 1;
+          }
         }
         p {
-            margin-top: 17px;
-            color: #78909c;
-            animation: tada 1s 1.8s linear both;
-            font-size: 17px;
-            @media (max-width: 425px) {
-                font-size: 13px;
-            }
+          color: #e7d927;
+          opacity: 0;
+          padding: 0 5px;
+          word-wrap: break-word;
+          @media (max-width: 500px) {
+            font-size: 15px;
+          }
         }
+        button {
+          padding: 15px 25px;
+          background: #022c43;
+          box-shadow: 2px 3px 4px black;
+          border: none;
+          border-radius: 10px;
+          transition: 0.5s;
+          color: white;
+          letter-spacing: 3px;
+          font-size: 15px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          cursor: pointer;
+          font-weight: bold;
+          opacity: 0;
+          &:last-of-type {
+            top: 63%;
+            svg {
+              margin-right: 3px;
+            }
+          }
+          a {
+            text-decoration: none;
+            color: inherit;
+            svg {
+              animation: moveright 0.8s infinite linear alternate;
+              margin-top: 3px;
+              font-size: 20px;
+              @keyframes moveright {
+                from {
+                  transform: translateX(0);
+                  color: tomato;
+                }
+                to {
+                  transform: translateX(5px);
+                  color: white;
+                }
+              }
+            }
+          }
+          &:hover {
+            box-shadow: 0 0 50px tomato;
+            color: tomato;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+      }
     }
-    #app {
-        width: 90vw;
-        height: 65vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        animation: fadeInLeftBig 1s 1.9s linear both;
-        .swiper {
-            height: 100%;
-            width: 80%;
-            box-shadow: 6px 7px 20px 0px #333;
-        }
-        .swiper-slide {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 18px;
-            font-size: 22px;
-            font-weight: bold;
-            color: #fff;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center !important;
-            position: relative;
-            animation: 1s 1.8s linear both;
-            transition: .5s;
-            &:nth-of-type(1) {
-                background: url('./Portfolio-imgs/dashboard.PNG');
-                background-position: 0% 16%!important;
-            }
-            &:nth-of-type(2) {
-                background: url('./Portfolio-imgs/Youtube-clone.PNG');
-            }
-            &:nth-of-type(3) {
-                background: url('./Portfolio-imgs/E-commrce.PNG');
-            }
-            &:nth-of-type(4) {
-                background: url('./Portfolio-imgs/WatchList.PNG');
-            }
-            &:nth-of-type(5) {
-                background: url('./Portfolio-imgs/reminder.PNG');
-            }
-            &:nth-of-type(6) {
-                background: url('./Portfolio-imgs/crud.PNG');
-            }
-            &:nth-of-type(7) {
-                background: url('./Portfolio-imgs/type-speed.PNG');
-            }
-            &:nth-of-type(8) {
-                background: url('./Portfolio-imgs/app.PNG');
-            }
-            &:nth-of-type(9) {
-                background: url('./Portfolio-imgs/tetris.PNG');
-            }
-            div {
-                opacity: 1;
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                transition: .5s;
-                padding: 15px;
-                text-align: center;
-                &:hover {
-                    background-color: #022c43e8;
-                    button {
-                        animation: zoomInLeft 1s linear both;
-                        opacity: 1;
-                        &:last-of-type {
-                            animation: zoomInRight 1s linear both;
-                        }
-                    }
-                    p {
-                        animation: zoomInRight 1s linear both;
-                        opacity: 1;
-                    }
-                }
-                p {
-                    color: #e7d927;
-                    opacity: 0;
-                    padding: 0 5px;
-                    word-wrap: break-word;
-                    @media (max-width: 500px) {
-                        font-size: 15px;
-                    }
-                }
-                button {
-                    padding: 15px 25px;
-                    background: #022c43;
-                    box-shadow: 2px 3px 4px black;
-                    border: none;
-                    border-radius: 10px;
-                    transition: .5s;
-                    color: white;
-                    letter-spacing: 3px;
-                    font-size: 15px;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    cursor: pointer;
-                    font-weight: bold;
-                    opacity: 0;
-                    &:last-of-type {
-                        top: 63%;
-                        svg {
-                            margin-right: 3px;
-                        }
-                    }
-                    a {
-                        text-decoration: none;
-                        color: inherit;
-                        svg {
-                            animation: moveright .8s infinite linear alternate;
-                            margin-top: 3px;
-                            font-size: 20px;
-                            @keyframes moveright {
-                                from {
-                                    transform: translateX(0);
-                                    color: tomato;
-                                }
-                                to {
-                                    transform: translateX(5px);
-                                    color: white;
-                                }
-                            }
-                        }
-                    }
-                    &:hover {
-                        box-shadow: 0 0 50px tomato;
-                        color: tomato;
-                    }
-                    &:focus {
-                        outline: none;
-                    }
-                }
-            }
-        }
-    }
+  }
 }
