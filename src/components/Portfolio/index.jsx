@@ -190,12 +190,12 @@ const Portfolio = () => {
             <SwiperSlide>
               <div>
                 <p>
-                  Watch App List With React Sutiable For All Devices <br /> Go A
-                  Head And Take A Look !
+                  Full-Stack Disney Clone App With React,Firebase and Redux
+                  Sutiable For All Devices <br /> Go A Head And Take A Look !
                 </p>
                 <button>
                   <a
-                    href="https://ob-watchlist-context-api.onrender.com"
+                    href="https://ob-disney-clone-firebase.onrender.com"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -204,7 +204,7 @@ const Portfolio = () => {
                 </button>
                 <button>
                   <a
-                    href="https://github.com/OmarBazeed/WatchList-app-Context-API"
+                    href="https://github.com/OmarBazeed/Disney-Clone-React-Firebase"
                     target="_blank"
                     rel="noreferrer"
                   >
