@@ -347,6 +347,84 @@ const Portfolio = () => {
                 </button>
               </div>
             </SwiperSlide>
+
+            <SwiperSlide>
+              <div>
+                <p>
+                  Fitness Gym With React And Typescript <br /> Go And Book Now  !
+                </p>
+                <button>
+                  <a
+                    href="https://ob-gym-typescript-react.onrender.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Demo <FontAwesomeIcon icon={faArrowRight} />
+                  </a>
+                </button>
+                <button>
+                  <a
+                    href="https://github.com/OmarBazeed/Finess-App-Typescript-React"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FontAwesomeIcon icon={faGithub} /> Code
+                  </a>
+                </button>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div>
+                <p>
+                  Full-Stack-Food-Delivery-App-React-Firebase
+                </p>
+                <button>
+                  <a
+                    href="https://ob-delivery-food-app-context-firebase.onrender.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Demo <FontAwesomeIcon icon={faArrowRight} />
+                  </a>
+                </button>
+                <button>
+                  <a
+                    href="https://github.com/OmarBazeed/Full-Stack-Food-Delivery-App-React-Firebase"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FontAwesomeIcon icon={faGithub} /> Code
+                  </a>
+                </button>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div>
+                <p>
+                  Real Estate App With Nextjs And Rapid API
+                </p>
+                <button>
+                  <a
+                    href="https://ob-real-estate-nextjs-api.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Demo <FontAwesomeIcon icon={faArrowRight} />
+                  </a>
+                </button>
+                <button>
+                  <a
+                    href="https://github.com/OmarBazeed/Real-Estate-App-Nextjs-API"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FontAwesomeIcon icon={faGithub} /> Code
+                  </a>
+                </button>
+              </div>
+            </SwiperSlide>
           </Swiper>
         </div>
       </div>
