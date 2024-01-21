@@ -1,0 +1,81 @@
+$primary-color: #ffd700;
+@import 'animate.css';
+@import '~loaders.css/src/animations/pacman.scss';
+@import '~loaders.css/src/animations/ball-spin-fade-loader.scss';
+@import '~loaders.css/src/animations/line-scale-pulse-out-rapid.scss';
+@import '~loaders.css/src/animations/ball-clip-rotate-multiple.scss';
+@import '~loaders.css/src/animations/cube-transition.scss';
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'La Belle Aurore';
+    src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
+}
+
+input,
+textarea {
+    font-family: 'Helvetica Neue';
+}
+
+.loader-active {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 50px;
+    width: 50px;
+    animation: fadeOut 1s 1s forwards linear;
+}
+
+
+/* Media Query For Mobile For All APP's Pages */
+
+// @media screen and (max-width:768px) {
+//     .mainLayout {
+//         display: block !important;
+//     }
+//     .sidebar {
+//         width: 98% !important;
+//         margin: 0;
+//         align-items: center;
+//         height: 60px !important;
+//         flex-direction: row !important;
+//         display: flex !important;
+//     }
+//     .sidebar .sidebar-logo img {
+//         height: 60px !important;
+//         width: 60px !important;
+//         margin-top: 30px
+//     }
+//     .sidebar .sidebar-navi {
+//         flex-direction: row !important;
+//         margin-top: 20px;
+//     }
+//     .sidebar .sidebar-navi a {
+//         margin: 10px !important;
+//     }
+//     .sidebar .connect {
+//         margin-top: 25px;
+//     }
+//     .mainLayout .tags {
+//         width: 95% !important;
+//         height: 100vh !important;
+//         overflow-y: scroll !important;
+//         overflow-x: hidden !important;
+//         padding: 10px !important;
+//     }
+//     .PortfolioPage #app .swiper {
+//         height: 475px !important;
+//     }
+// }

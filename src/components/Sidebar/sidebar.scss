@@ -1,0 +1,94 @@
+.sidebar {
+    width: 45px;
+    background-color: #181818;
+    height: calc(100vh - 30px);
+    box-shadow: 0 0px 6px 0px #f9a825ba;
+    padding: 10px 5px 30px 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /**/
+    .sidebar-logo {
+        img {
+            width: 80%;
+            height: 35px;
+        }
+        h3 {
+            color: white;
+            filter: drop-shadow(2px 3px 4px gray);
+            margin-top: 0;
+            text-align: center;
+        }
+    }
+    /**/
+    .sidebar-navi {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        a {
+            text-decoration: none;
+            color: #4d4d4e;
+            font-size: 20px;
+            position: relative;
+            margin: 10px auto;
+            svg {
+                transition: .5s;
+            }
+            &::after {
+                position: absolute;
+                top: 0;
+                left: -8px;
+                content: attr(data-content);
+                color: #e7d927;
+                text-align: center;
+                opacity: 0;
+                transition: .5s;
+                font-size: 15px;
+            }
+            &:hover {
+                svg {
+                    opacity: 0;
+                }
+                &:after {
+                    opacity: 1;
+                }
+            }
+            &.active {
+                svg {
+                    color: #e7d927
+                }
+            }
+            &:last-of-type {
+                &::after {
+                    left: -14px;
+                }
+            }
+        }
+    }
+    .connect {
+        list-style-type: none;
+        padding-left: 0;
+        li {
+            display: block;
+            margin: 5px auto;
+            a {
+                text-decoration: none;
+                color: #444;
+                font-size: 18px;
+                svg {
+                    transition: .5s;
+                }
+                &:hover {
+                    color: #e7d927;
+                    svg {
+                        transform: translateX(-3px);
+                    }
+                }
+            }
+        }
+    }
+}

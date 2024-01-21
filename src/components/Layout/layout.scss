@@ -1,0 +1,18 @@
+.mainLayout {
+    display: flex;
+    height: 100vh !important;
+    // @media screen and (max-width: 786px) {
+    //     display: block ;
+    // }
+    .tags {
+        padding: 30px 22px;
+        width: 100%;
+        overflow-x: hidden !important;
+        overflow-y: scroll !important;
+        span {
+            color: #e7d927;
+            font-size: 17px;
+            font-family: "La Belle Aurore";
+        }
+    }
+}

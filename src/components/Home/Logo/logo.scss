@@ -1,0 +1,16 @@
+.logo-container {
+  position: relative;
+  .solid-logo {
+    max-width: 100%;
+    z-index: 2;
+    animation: coloring 1s 2.8s linear 1 both;
+  }
+}
+@keyframes coloring {
+  from {
+    filter: invert(1);
+  }
+  to {
+    filter: none;
+  }
+}
