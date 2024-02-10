@@ -1,32 +1,27 @@
 import React from 'react'
-import { Outlet } from 'react-router-dom';
-import Sidebar from '../Sidebar';
-import './layout.scss';
+import { Outlet } from 'react-router-dom'
+import Sidebar from '../Sidebar'
+import './layout.scss'
 
 const Layout = () => {
-    return (
-        <div className='mainLayout'>
+  return (
+    <div className="mainLayout">
+      <Sidebar />
 
-            <Sidebar />
+      <div className="tags">
+        <span> &lt;body&gt; </span>
+        <br />
 
-            <div className='tags'>
+        <Outlet />
 
-                <span> &lt;body&gt; </span>
-                <br />
+        <br />
 
-                <Outlet />
-
-                <br />
-
-                <span>&lt;/body&gt;</span>
-                <br />
-                <span>&lt;/html&gt;</span>
-
-            </div>
-
-
-        </div>
-    )
+        <span>&lt;/body&gt;</span>
+        <br />
+        <span>&lt;/html&gt;</span>
+      </div>
+    </div>
+  )
 }
 
-export default Layout;
+export default Layout
