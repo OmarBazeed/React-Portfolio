@@ -63,7 +63,7 @@
     }
   }
   #app {
-    width: 90vw;
+    width: 100vw;
     height: 65vh;
     display: flex;
     justify-content: center;
@@ -71,7 +71,7 @@
     animation: fadeInLeftBig 1s 1.9s linear both;
     .swiper {
       height: 100%;
-      width: 80%;
+      width: 95%;
       box-shadow: 6px 7px 20px 0px #333;
     }
     .swiper-slide {

@@ -70,15 +70,16 @@ const Portfolio = () => {
           <Swiper
             spaceBetween={30}
             centeredSlides={true}
-            autoplay={{
-              delay: 4000,
-              disableOnInteraction: false,
-            }}
+            // autoplay={{
+            //   delay: 4000,
+            //   disableOnInteraction: false,
+            // }}
+            direction={'vertical'}
             pagination={{
-              type: 'progressbar',
+              clickable: true,
             }}
-            modules={[Autoplay, Pagination, Navigation]}
             className="mySwiper"
+            modules={[Autoplay, Pagination, Navigation]}
           >
             <SwiperSlide>
               <div>
@@ -351,7 +352,7 @@ const Portfolio = () => {
             <SwiperSlide>
               <div>
                 <p>
-                  Fitness Gym With React And Typescript <br /> Go And Book Now  !
+                  Fitness Gym With React And Typescript <br /> Go And Book Now !
                 </p>
                 <button>
                   <a
@@ -376,9 +377,7 @@ const Portfolio = () => {
 
             <SwiperSlide>
               <div>
-                <p>
-                  Full-Stack-Food-Delivery-App-React-Firebase
-                </p>
+                <p>Full-Stack-Food-Delivery-App-React-Firebase</p>
                 <button>
                   <a
                     href="https://ob-delivery-food-app-context-firebase.onrender.com"
@@ -402,9 +401,7 @@ const Portfolio = () => {
 
             <SwiperSlide>
               <div>
-                <p>
-                  Real Estate App With Nextjs And Rapid API
-                </p>
+                <p>Real Estate App With Nextjs And Rapid API</p>
                 <button>
                   <a
                     href="https://ob-real-estate-nextjs-api.netlify.app/"
