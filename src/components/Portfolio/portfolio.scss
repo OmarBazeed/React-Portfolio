@@ -74,6 +74,12 @@
       width: 95%;
       box-shadow: 6px 7px 20px 0px #333;
     }
+    .swiper-pagination-vertical.swiper-pagination-bullets
+      .swiper-pagination-bullet,
+    .swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
+      width: 20px;
+      height: 20px;
+    }
     .swiper-slide {
       display: flex;
       align-items: center;
@@ -89,7 +95,7 @@
       animation: 1s 1.8s linear both;
       transition: 0.5s;
       &:nth-of-type(1) {
-        background: url('./Portfolio-imgs/Amazon-clone.png');
+        background: url('./Portfolio-imgs/real-estate.png');
       }
       &:nth-of-type(2) {
         background: url('./Portfolio-imgs/dashboard.PNG');
@@ -99,11 +105,12 @@
         background: url('./Portfolio-imgs/Youtube-clone.PNG');
       }
       &:nth-of-type(4) {
-        background: url('./Portfolio-imgs/E-commrce.PNG');
-      }
-      &:nth-of-type(5) {
         background: url('./Portfolio-imgs/disney.png');
       }
+      &:nth-of-type(5) {
+        background: url('./Portfolio-imgs/E-commrce.PNG');
+      }
+
       &:nth-of-type(6) {
         background: url('./Portfolio-imgs/reminder.PNG');
       }
@@ -126,7 +133,7 @@
         background: url('./Portfolio-imgs/delivery-app.png');
       }
       &:nth-of-type(13) {
-        background: url('./Portfolio-imgs/real-estate.png');
+        background: url('./Portfolio-imgs/Amazon-clone.png');
       }
       div {
         opacity: 1;
