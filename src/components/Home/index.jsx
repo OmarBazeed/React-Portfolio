@@ -5,11 +5,25 @@ import './home.scss'
 import AnimatedLetters from '../AnimattedLetters'
 import Logo from './Logo'
 import Loader from 'react-loaders'
-import PDF from './Omar_Bazeed_Resume_08-03-2023-03-26-54.pdf'
+import PDF from './Omar-Bazeed-FlowCV-Resume-20231120.pdf'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const nameArray = [' ', 'O', 'm', 'a', 'r', ' ', 'B', 'a', 'z', 'e', 'e', 'd', '🤚']
+  const nameArray = [
+    ' ',
+    'O',
+    'm',
+    'a',
+    'r',
+    ' ',
+    'B',
+    'a',
+    'z',
+    'e',
+    'e',
+    'd',
+    '🤚',
+  ]
   const jobArray = [
     'W',
     'e',
@@ -25,7 +39,7 @@ const Home = () => {
     'e',
     'r',
     '.',
-    '👏'
+    '👏',
   ]
 
   useEffect(() => {
@@ -56,7 +70,6 @@ const Home = () => {
               strArray={jobArray}
               idx={20}
             />
-
           </h1>
 
           <p> Frontend Developer | Some Skills Of Graphic Designer </p>
@@ -66,7 +79,6 @@ const Home = () => {
           </Link>
 
           <a href={PDF} className="download" download>
-
             Download C.V
           </a>
         </div>

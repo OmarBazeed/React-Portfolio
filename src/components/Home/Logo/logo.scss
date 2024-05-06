@@ -3,14 +3,26 @@
   .solid-logo {
     max-width: 100%;
     z-index: 2;
-    animation: coloring 1s 2.8s linear 1 both;
+    animation: coloring 1s 2.8s linear 1 both,
+      moving 1s linear infinite both alternate;
+    transform: scaleX(-1);
   }
 }
 @keyframes coloring {
   from {
     filter: invert(1);
+    transform: translateX(-2px) scaleX(-1);
   }
   to {
     filter: none;
+    transform: translateX(0) scaleX(-1);
+  }
+}
+@keyframes moving {
+  from {
+    transform: translateY(-10px) scaleX(-1);
+  }
+  to {
+    transform: translateY(0) scaleX(-1);
   }
 }
