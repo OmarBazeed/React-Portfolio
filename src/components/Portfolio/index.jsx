@@ -214,12 +214,12 @@ const Portfolio = () => {
             <SwiperSlide>
               <div>
                 <p>
-                  Reminder App Built With React And DatePicker <br /> Go A Head
-                  And Take A Look !
+                  Food Mangement App Built With React(vite) And Bootstarp <br />{' '}
+                  Go A Head And Take A Look !
                 </p>
                 <button>
                   <a
-                    href="https://ob-reminder-react-redux-old-way.onrender.com"
+                    href="https://food-app-mangement.netlify.app"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -228,7 +228,7 @@ const Portfolio = () => {
                 </button>
                 <button>
                   <a
-                    href="https://github.com/OmarBazeed/Reminder-Application-With-React-redux-"
+                    href="https://github.com/OmarBazeed/food-app-react"
                     target="_blank"
                     rel="noreferrer"
                   >
