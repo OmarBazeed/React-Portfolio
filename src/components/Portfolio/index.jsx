@@ -59,6 +59,7 @@ const Portfolio = () => {
                 textDecoration: 'none',
                 color: '#e7d927',
                 fontWeight: 'bold',
+                paddingLeft: '5px',
               }}
             >
               GitHub
@@ -241,12 +242,12 @@ const Portfolio = () => {
             <SwiperSlide>
               <div>
                 <p>
-                  Crud App With React , Fully Responsive <br /> Go A Head And
-                  Take A Look !
+                  Project Mangement Sysytem Built In Typescript(vite) and
+                  Bootstarp <br /> Go A Head And Take A Look !
                 </p>
                 <button>
                   <a
-                    href="https://ob-crud-app-react.onrender.com"
+                    href="https://project-mange-sys.netlify.app"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -255,7 +256,7 @@ const Portfolio = () => {
                 </button>
                 <button>
                   <a
-                    href="https://github.com/OmarBazeed/Crud-Application-With-React"
+                    href="https://github.com/OmarBazeed/project-mangement-system"
                     target="_blank"
                     rel="noreferrer"
                   >
