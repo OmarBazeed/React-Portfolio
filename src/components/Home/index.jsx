@@ -5,7 +5,7 @@ import './home.scss'
 import AnimatedLetters from '../AnimattedLetters'
 import Logo from './Logo'
 import Loader from 'react-loaders'
-import PDF from './Omar-Bazeed-FlowCV-Resume-20231120.pdf'
+import PDF from './Omar Bazeed ATS.pdf'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
