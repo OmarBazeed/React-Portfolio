@@ -1,41 +1,49 @@
-##  Amazing Portfolio Built In React And Some Liberaries :
- + Creating Amazing Animated Portfolio Based On `react` And Different Liberaries
- + Using `SASS` Technology For Styling The App
- + `animate.css` ==> For Making Easy Great Animations..
- + `react-loaders` ==> For Adding Some Loaders In Your Pages
- + `react-fontawesome` ==> For Using Some Amazing Icons 
- + `@emailjs/browser` ==> Using For Sending Messages From The App To Main Mail **(Go For email.js And Make An Account And Handle It)**
- + `react-leaflet` ==> Uses React's Context API To Make Some Leaflet Elements Instances Available To Children Elements That Need It **(Used To Create A Map)**
- + `@react-three/fiber` , `@react-three/drei` ==> An Open-Source React-Renderer For Three. js **(Used For Creating 3D-Spherical , Three)**
- + `sweetalert` ==> Used To Make A Creative Alerts
- + `swiper` ==> Used To make Different Swpiers  
- + Go And Take A Look Then Go For Coding...
- ---------------------------------------------------------------------------------------------------------------
- ### Installation Requierments :
- ```
- npm i animate.css --save
- npm i react-loaders --save 
- npm i @fortawesome/fontawesome-svg-core @fortawesome/free-brands-svg-icons @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome  --save 
- npm i @emailjs/browser --save 
- npm i @react-three/fiber --save 
- npm i @react-three/drei --save 
- npm i sweetalert --save 
- npm i swiper --save 
-   ``` 
-  ---------------------------------------------------------------------------------------------------------------
- ### Live Demo : 
- [React Portfolio](https://ob-portfolio-react.onrender.com)
- 
- ---------------------------------------------------------------------------------------------------------------
- ### Live Pictures :
- <div>
- <img src='https://user-images.githubusercontent.com/114960595/214439576-69ae5ad7-b147-43ad-aa05-7b03b5e283c2.png' />
- <br />
- <img src='https://user-images.githubusercontent.com/114960595/214439589-abc043d8-7a63-46e6-8cef-8bd9be5da097.png' />
-  <br />
- <img src='https://user-images.githubusercontent.com/114960595/214439593-477a2fda-b544-48ea-8dae-7477926522fc.png' />
-  <br />
- <img src='https://user-images.githubusercontent.com/114960595/214640528-1fe9a551-a71f-412b-86f8-6399be4cb259.png' />
-  <br />
- <img src='https://user-images.githubusercontent.com/114960595/214439911-2e234382-575d-42f0-b732-9dfda4e30a69.png' height='600' />
- </div>
+# Omar Bazeed Portfolio: design preview
+
+A separate redesign of the portfolio, not a production release. The original live Render site has not been changed.
+
+## Run locally
+Node.js 22 recommended.
+
+```
+npm ci
+npm run dev
+```
+
+```
+npm run build
+npm run preview
+```
+
+Stack: React 18, Vite 6 and CSS. Selected projects are in the `projects` array in `src/main.jsx`. Local optimized WebP assets and the two approved services videos are in `public/media`. The removed legacy app remains available in Git history.
+
+## Current preview scope
+- One scrolling page: hero, four filterable projects, e-commerce focus, bilingual services showreel, about/toolkit, contact.
+- Mobile menu, readable content without hover, reduced-motion support, keyboard focus and skip navigation.
+- Reliable email links instead of an unverified EmailJS form. No messages are sent by this site itself.
+- Old CV download intentionally omitted pending a current approved document.
+- No invented employment dates, client identities, platforms or performance numbers.
+- Project-management system is credited as collaborative. Exact contribution needs confirmation.
+- Video graphics and campaign figures explicitly labeled illustrative.
+
+## Before a public launch
+1. Confirm latest CV, current location/availability and employment dates.
+2. Confirm real store links/platforms, individual role, approved screenshots and any supported results.
+3. Replace preview banner/content notes with approved final content.
+4. Confirm project contributions and recheck live demos before adding demo buttons. Three development projects now have verified-resolving demo links and source links. Login-protected functions were not tested. NYLON links to its live verified store at https://www.nylonsa.com/.
+5. Verify the preview in the target host, all contact links, video playback, direct entry/reload and latest CV.
+6. Get approval to publish the final version and verify the existing Render service settings first.
+
+## Hosting a separate preview
+The optional `render.yaml` describes a NEW static preview site, not the current production service. Build: `npm ci && npm run build`. Publish directory: `dist`. SPA fallback: rewrite `/*` to `/index.html`. Auto-deploy is disabled in this proposed blueprint. No hosting service was created by this work.
+
+The one-page navigation uses anchors. Old paths can serve the same entry page when the host fallback is configured. The live server's current Not Found behavior cannot be fixed until its actual settings are changed. Local verification does not establish production configuration.
+
+## Checks performed
+Production build succeeded. Browser checks at 320, 390 and 1280 CSS pixels: no horizontal overflow, four cards rendered, images decoded, no uncaught page errors. Mobile menu, anchor navigation, Commerce filter (one project), Arabic video source selection and overview disclosure exercised. No external contact message or job application was sent by these checks.
+
+## Project shortlist, 23 November update
+Exactly four cards: featured NYLON, Project Management System, Food App, Real Estate App. The latter three were selected from the approved selected-projects PDF. Hotel Management was left out because its demo contains placeholder content, and the selection already covers management workflows and Next.js/API work. Generic storefront, dashboard, food-delivery cards and the More experiments link were removed from the preview. NYLON responsibilities come from Omar’s own statements. Its card uses a real storefront screenshot captured from https://www.nylonsa.com/ on 23 November 2026, cropped to the header/hero to avoid the cookie banner and unrelated overlays. The screenshot does not imply sole authorship of every page element.
+
+## NYLON visual update
+Actual store URL supplied by Omar and verified in the browser: https://www.nylonsa.com/. Replaced title artwork with an optimized WebP storefront capture and added Visit NYLON store. Other three selected projects unchanged. No actions, cart changes or forms submitted on the store.
