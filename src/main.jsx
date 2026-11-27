@@ -1,6 +1,7 @@
-import React, {useState,useEffect} from 'react';
+import React, {useState,useEffect,useRef} from 'react';
 import {createRoot} from 'react-dom/client';
 import './style.css';
+import {initHeroFx} from './fx.js';
 
 const getTheme=()=>{try{const t=localStorage.getItem('theme');if(t==='dark'||t==='light')return t}catch(e){}return window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'};
 const getLang=()=>{try{const l=localStorage.getItem('lang');if(l==='ar'||l==='en')return l}catch(e){}return (navigator.language||'').toLowerCase().startsWith('ar')?'ar':'en'};
@@ -108,6 +109,8 @@ function App(){
   let io;const els=[...document.querySelectorAll(revealSelectors)];
   if('IntersectionObserver' in window&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting||e.boundingClientRect.top<0){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.08,rootMargin:'0px 0px -6% 0px'});els.forEach((el,i)=>{el.classList.add('reveal');el.style.setProperty('--d',(i%4)*70+'ms');io.observe(el)})}
   return()=>{window.removeEventListener('scroll',onScroll);io&&io.disconnect()}},[]);
+ const heroRef=useRef(null),canvasRef=useRef(null),visualRef=useRef(null);
+ useEffect(()=>initHeroFx({hero:heroRef.current,canvas:canvasRef.current,visual:visualRef.current,src:'/media/omar.webp'}),[]);
  const [filter,setFilter]=useState('All');const [menu,setMenu]=useState(false);const [language,setLanguage]=useState('en');
  const dark=theme==='dark';
  return <>
@@ -116,7 +119,7 @@ function App(){
  <button className="lang-toggle" onClick={()=>setLang(lang==='ar'?'en':'ar')} aria-label={t.langAria} lang={lang==='ar'?'en':'ar'}>{t.langLabel}</button>
  <button className="theme-toggle" onClick={()=>setTheme(dark?'light':'dark')} aria-label={dark?t.themeToLight:t.themeToDark} title={dark?t.themeTitleLight:t.themeTitleDark}><ThemeIcon dark={dark}/></button></header></div>
  <main id="main">
- <section className="hero wrap" id="home"><div className="hero-copy"><p className="eyebrow"><span/> {t.eyebrow}</p><h1>{t.h1}</h1><p className="hero-intro">{t.intro}</p><div className="hero-actions"><a className="button primary" href="#work">{t.explore} <span>↓</span></a><a className="text-link" href={linkedin} target="_blank" rel="noreferrer">{t.linkedin} <Arrow/></a></div><p className="hero-note">{t.heroNote}</p></div><div className="hero-visual"><div className="orbit one"/><div className="orbit two"/><span className="visual-label">{t.visual}</span><img src="/media/omar.webp" alt={t.name}/><div className="portrait-card"><span className="small-label">{t.cardLabel}</span><strong>{t.card}</strong><span className="card-arrow arr" aria-hidden="true">↗</span></div></div></section>
+ <section className="fx-hero" id="home" ref={heroRef}><canvas className="fx-canvas" ref={canvasRef} aria-hidden="true"/><div className="fx-inner"><div className="hero-copy"><p className="eyebrow"><span/> {t.eyebrow}</p><h1>{t.h1}</h1><p className="hero-intro">{t.intro}</p><div className="hero-actions"><a className="button primary" href="#work">{t.explore} <span>↓</span></a><a className="text-link" href={linkedin} target="_blank" rel="noreferrer">{t.linkedin} <Arrow/></a></div><p className="hero-note">{t.heroNote}</p></div></div><div className="fx-visual" ref={visualRef}><img src="/media/omar.webp" alt={t.name} width="400" height="400" fetchpriority="high"/></div></section>
  <div className="discipline-strip"><div className="wrap"><span>{t.strip[0]}</span><i>✳</i><span>{t.strip[1]}</span><i>✳</i><span>{t.strip[2]}</span></div></div>
  <section className="section wrap" id="work"><div className="section-heading"><div><p className="eyebrow">{t.workEy}</p><h2>{t.workH}</h2></div><p>{t.workP}</p></div><div className="filters" role="group" aria-label={t.filterLabel}>{t.filters.map(([k,label])=><button key={k} aria-pressed={filter===k} onClick={()=>setFilter(k)}>{label}{k==='All'?' / '+projects.length:''}</button>)}</div><div className="project-grid">{projects.filter(p=>filter==='All'||p.category===filter).map(p=>{const d=t.p[p.key];return <article className={p.featured?'project featured-project':'project'} key={p.id}>
 <div className={p.featured?'project-image nylon-screenshot':'project-image'}><img src={'/media/'+p.image} loading="lazy" alt={p.featured?t.nylonAlt:t.previewAlt(d.title)}/><span className="project-number">{p.featured?t.featured:p.id}</span></div>
